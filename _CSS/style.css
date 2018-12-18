@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+/*=== Font ===*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800');
+/*font-family: 'Raleway', sans-serif;*/
+
+* {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+
+a{text-decoration: none;}
+
+/*===== Barra TOP telefone e Rede Social Mobile =====*/
+.telf{
+	background-color: #0D4D7E;
+	padding: 10px;
+}
+
+.telf h3{
+	color: #FFF;
+	font-size: 12px;
+	margin-left: 8%;
+}
+
+.telf p{
+	float: left;
+	position: relative;
+	display: block;
+	float: right;
+	font-size: 20px;
+	margin-top: -16px;
+	margin-right: 18%;
+}
+
+.telf p a{padding: 2px;}
+
+.face{	
+	color: #B7B6B6;
+}
+
+.tw{
+	color: #B7B6B6;
+}
+
+.insta{
+	color: #B7B6B6;
+}
+
+body{background: #FFF;}
+img {max-width: 100%;}
+p{word-wrap: break-word;}
+
+/*===== Configurações do Menu Mobile =====*/
+
+header{
+	background: #0B2A48; /*Menu Geral*/
+	padding: 15px;
+}
+
+a{text-decoration: none;}
+
+ul{list-style: none;}
+
+header a img{
+    width: 250px;
+    height: 90px;
+    max-width: 100%;
+    position: relative;
+    left: 8%;
+}
+
+.cabecalho{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+
+.btn-menu{
+    width: 56px;
+    height: 56px;
+    float: right;
+    text-align: center;
+    color: #fff;
+    border-radius: 56px;
+    cursor: pointer;
+    background-color: #1a80b6;
+	margin: 2% 15% 0 0;
+}
+
+.btn-close{
+    font-size: 3em;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.9);
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 100;
+}
+
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.menu ul ul{display:block;}
+.menu ul ul li a{font-size:1.5em;}
+
+
+.menu li{
+    padding: 1.5%;
+	
+}
+.menu li:hover .sub-menu{
+display:block;
+}
+
+.menu a{
+    font-size: 2em;
+    color: #fff;
+    padding: 1.5% 3%;
+}
+
+.menu li a:hover{
+    border: 1px solid #cecece;
+}
+
+.banner img{width: 100%; height: auto;}
+
+/*===== Configuração do Menu para Desktop/Tablet =====*/
+/*===== Configuração das legendas da foto principal =====*/
+@media screen and (min-width: 1015px){
+
+    .btn-menu{
+        display: none;
+    }
+
+    .btn-close{
+        display: none;
+    }
+
+    .menu {
+        width: auto;
+        float: right;
+        margin-right: 18%;
+        background-color: #0B2A48; /*fundo container links*/
+        display: block !important;
+        position: static;
+    }
+
+    .menu li {
+        padding: 0;
+        margin-left: 60px;
+        float: left;
+        margin-top: 40px;
+    }
+
+    .menu li a{
+        color: #FFF;
+        font-size: 1.1em;
+        font-weight: bolder;
+        font-family: all;
+    }
+
+    .menu li a:hover{
+        border: none;
+        color: #6BB6DF;
+    }
+
+	.menu ul ul{position:absolute; display:none; width:auto; background-color:#F5F5F5; text-align:center; margin-right:10%; float:left; right:220px;}
+	.menu .topo{border-top: 2px solid #202fce; margin-top:10%;}
+	.menu .fim{border-bottom:2px solid #202fce;}
+	
+	.menu .inicio{
+		color: #6F6F6F;
+		font-weight: bold;
+	}
+
+    header img{
+        width: 250px;
+        height: 100px;
+        position: relative;
+        left: 17%;
+
+    }
+
+    
+}
+
+@media screen and (max-width: 1410px) {
+
+    header img {
+        width: 250px;
+        height: 100px;
+        position: relative;
+        left: 15%;
+
+    }
+}
+
+@media screen and (max-width: 1250px) {
+
+    header  img {
+        width: 250px;
+        height: 100px;
+        position: relative;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    header  img {
+        width: 250px;
+        height: 100px;
+        position: relative;
+        left: 0%;
+    }
+}
+
+
+.container {width: 100%; float: left; padding: 3% 4%; text-align: center;}
+.container2 {width: 100%; float: left; text-align: center;}
+.banner img{
+    width: 100%;
+    max-height: 400px;
+    min-height: 250px;
+}
+
+/*=== Nossos Serviços Mobile ===*/
+
+.text-serv h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #535353;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+
+.icon img{width: 85px; height: 85px;}
+
+.texto h4{
+    font-size: 1.2em;
+}
+
+.texto h4 a{
+    color: #2D2D2D;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.texto h4 a:hover{color: #7777;}
+
+.texto p{
+    margin-top: 3%;
+    color: #4D4D4D;
+    line-height: 1.5em;
+    margin-bottom: 5%;
+}  
+
+.title2 h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #FFF;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+    background: #0B2A48;
+    margin: 0;
+    padding: 1%;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+/* SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px) {
+.servico {width: 49%; float: left; margin-right: 2%;}
+.servico:nth-child(2){margin-right: 0;}
+.servico:nth-child(4){margin-right: 0;}
+.tabela{width:47%; float:left; margin-right:2%;}
+.marcas{width: 49%; float: left; margin-right: 2%;}
+.marcas:nth-child(2){margin-right: 0;}
+.marcas:nth-child(4){margin-right: 0;}
+.marcas:nth-child(6){margin-right: 0;}
+.marcas:nth-child(8){margin-right: 0;}
+.marcas:nth-child(10){margin-right: 0;}
+}
+
+@media screen and (min-width: 960px){
+.servico {width: 23%; }
+.servico:nth-child(2){margin-right: 2%;}
+.servico:nth-child(4){margin-right: 0;}
+.servico ul{font-size: 1.1em;}
+.marcas{width: 17%;}
+.marcas:nth-child(5){margin-right: 2%;}
+.marcas:nth-child(6){margin-right: 2%;}
+.marcas:nth-child(7){margin-right: 0;}
+.marcas:nth-child(8){margin-right: 2%;}
+.marcas:nth-child(9){margin-right: 0;}
+}
+.aside{margin-left: 8%;}
+@media screen and (min-width: 1080px){
+.texto-servico{margin-top:1%; margin-bottom:1%;}
+}
+
+footer .rodape{
+    background: #18397D;
+}
+
+.rodape h4{
+    color: #FFF;
+    margin-bottom: 3%;
+    font-size: 1.1em;
+    text-align: left;
+}
+.rodape p{
+    color: #FFF;
+    text-align: left;
+    font-size: 0.9em;
+}
+.rodape h3{
+    color: #FFF;
+}
+.rodape h3 a{color: #FFF;}
+
+.rpe{float: right; margin-top: 4.2%;}
+
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BELTEC Refrigeração</title>
+	<meta charset="utf-8"/>
+	<link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="_CSS/style.css"/>
+	<link rel="stylesheet" type="text/css" href="_CSS/slider.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+	<div class="telf">
+		<h3>Ligue para nós Hoje! (22) 999999999 &nbsp&nbsp|&nbsp&nbsp contato@beltec.com.br</h3>
+		<p>
+			<a href="#" class="face"><i class="fab fa-facebook-f"></i></a>
+			<a href="#" class="tw"><i class="fab fa-twitter"></i></a>
+			<a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+		</p>
+	</div>
+	<!-- MENU -->
+	<header>
+		<a href="#"><img src="_IMAGENS/testelogo.png" class="logo"></a>
+		<button class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></button>
+		<nav class="menu">
+			<a class="btn-close"><i class="fa fa-times"></i></a>
+			<ul>
+				<li><a href="#" class="inicio">Início</a></li>
+				<li><a href="#">Serviços</a></li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- FIM DO MENU -->
+	<!-- JQUERY DO MENU -->
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script>
+	    $(".btn-menu").click(function(){
+	        $(".menu").show();
+	    });
+	    $(".btn-close").click(function(){
+	        $(".menu").hide();
+	    });
+	</script>
+	<!-- FIM DO JQUERY DO MENU -->
+
+	<!--<section class="container2 banner">
+		<img src="_IMAGENS/banner-grande.png">
+	</section>
+
+	<div class="text-serv container">
+		<h3>Nossos Serviços</h3>
+	</div>
+	-->
+
+
+	<div class="w3-display-container">
+	  <img class="mySlides" src="_IMAGENS/01.jpg" style="width:100%">
+	  <img class="mySlides" src="_IMAGENS/02.jpg" style="width:100%">
+	  <img class="mySlides" src="_IMAGENS/03.jpg" style="width:100%">
+	  <img class="mySlides" src="_IMAGENS/04.png" style="width:100%">
+
+	  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+	</script>
+
+
+
+	<main class="container">
+        <article class="servico bg-white radius">
+            <a href="#" class="icon"><img src="_IMAGENS/preventiva.png"></a>
+            <div class="texto">
+                <h4><a href="#">Manutenção Preventiva</a></h4>
+                <p>A BELTEC mantém um grupo de técnicos especialmente capacitados para assistência técnica, manutenção preventiva, de equipamentos de ar condicionado tipo Central, Split ou Janela.</p>
+            </div>
+
+        </article>
+       <article class="servico bg-white radius">
+            <a href="#" class="icon"><img src="_IMAGENS/corretiva.png"></a>
+            <div class="texto">
+                <h4><a href="#">Manutenção Corretiva</a></h4>
+                <p>A BELTEC mantém um grupo de técnicos especialmente capacitados para assistência técnica, manutenção corretiva, de equipamentos de ar condicionado tipo Central, Split ou Janela.</p>
+            </div>
+
+        </article>
+       <article class="servico bg-white radius">
+            <a href="#" class="icon gelo"><img src="_IMAGENS/snow.png"></a>
+            <div class="texto">
+                <h4><a href="#">Instalação</a></h4>
+                <p>A BELTEC executa a instalação de ar condicionado do tipo Central, Split ou Janela de qualquer fabricante.</p>
+            </div>
+
+        </article>
+       <article class="servico bg-white radius">
+            <a href="#" class="icon"><img src="_IMAGENS/remove-ar.png"></a>
+            <div class="texto">
+                <h4><a href="#">Desinstalação</a></h4>
+                <p>A BELTEC realiza desinstalação de Ar Condicionado e a re-instalação do Ar Condicionado conforme sua necessidade.</p>
+            </div>
+        </article>
+    </main>
+    <div class="title2">
+    	<h2>Trabalhamos com todas as marcas e modelos</h2>
+    </div>
+    <aside class="container">
+        <div class="aside">
+        <article class="marcas bg-white radius">
+            <img src="_IMAGENS/bosch.png">
+        </article>
+        <article class="marcas bg-white radius">
+           <img src="_IMAGENS/carrier.png">
+       </article>
+       <article class="marcas bg-white radius">
+            <img src="_IMAGENS/eltro.png">
+       </article>
+       <article class="marcas bg-white radius">
+           <img src="_IMAGENS/gree.png">
+       </article>
+       <article class="marcas bg-white radius">
+            <img src="_IMAGENS/hitachi.png">
+       </article>
+       <article class="marcas bg-white radius">
+            <img src="_IMAGENS/lg.png">
+       </article>
+       <article class="marcas bg-white radius">
+            <img src="_IMAGENS/midea.png">
+       </article>
+       <article class="marcas bg-white radius">
+            <img src="_IMAGENS/samsung.png">
+       </article>
+       <article class="marcas bg-white radius">
+            <img src="_IMAGENS/springer.png">
+       </article>
+       <article class="marcas bg-white radius">
+            <img src="_IMAGENS/york.png">
+       </article>
+       </div>
+    </aside>
+	<footer>
+	   <div class="rodape container">
+	       <article class="marcas">
+	            <h4>Horário de atendimento:</h4>
+	            <p>de segunda a sexta das 8h às 18h<br>
+				   sábados das 8h às 12h.<br>
+				   Tel: (22)99999-9999</p>
+				<p>&copy RB Tavares comercio e serviços</p>
+	       </article>
+	       <article class="marcas rpe">
+	       		<h3>Desenvolvido por <a href="#">PTWEBSTUDIO</a></h3>
+	       </article>
+	    </div>
+
+		<!--<div class="rpe">
+			<div class="rpe-text">
+				<h4>Horário de atendimento:</h4>
+				<p>de segunda a sexta das 8h às 18h<br>
+				   sábados das 8h às 12h.<br>
+				   Tel: (22)99999-9999</p>
+				<p>&copy RB Tavares comercio e serviços</p>
+			</div>
+			<div class="criado">
+				<h3>Desenvolvido por <a href="#">PTWEBSTUDIO</a></h3>
+			</div>
+		</div> -->
+		
+	</footer>
+</body>
+</html>
